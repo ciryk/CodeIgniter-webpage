@@ -24,6 +24,6 @@ class News extends CI_Controller {
 		$data['posts'] = $this->NewsModel->get_last_ten_entries();
 		$params = array('title' => '', 'content' => '', 'date' => '');
 		$this->load->library('Newslib',$params);
-		$this->load->view('news',$data);
+		$this->load->template('news',$data);
 	}
 }
