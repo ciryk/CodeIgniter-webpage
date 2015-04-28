@@ -20,6 +20,10 @@ class News extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$this->load->model('NewsModel');
+		$data['posts'] = $this->NewsModel->get_last_ten_entries();
+		$params = array('title' => '', 'content' => '', 'date' => '');
+		$this->load->library('Newslib',$params);
+		$this->load->view('news',$data);
 	}
 }

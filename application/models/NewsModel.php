@@ -14,7 +14,7 @@ class NewsModel extends CI_Model {
     
     function get_last_ten_entries()
     {
-        $query = $this->db->get('entries', 10);
+        $query = $this->db->get('news', 10);
         return $query->result();
     }
 
@@ -24,7 +24,7 @@ class NewsModel extends CI_Model {
         $this->content = $_POST['content'];
         $this->date    = time();
 
-        $this->db->insert('entries', $this);
+        $this->db->insert('news', $this);
     }
 
     function update_entry()
@@ -33,7 +33,7 @@ class NewsModel extends CI_Model {
         $this->content = $_POST['content'];
         $this->date    = time();
 
-        $this->db->update('entries', $this, array('id' => $_POST['id']));
+        $this->db->update('news', $this, array('id' => $_POST['id']));
     }
 
 }
