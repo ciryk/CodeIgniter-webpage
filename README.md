@@ -1,6 +1,6 @@
 # CodeIgniter webpage
 
-Currently in progress.
+<h2>In progress..</h2>
 
-<b>Current features :</b> 
+<h3>Current features :</h3> 
 - News display
