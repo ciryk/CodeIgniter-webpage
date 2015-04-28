@@ -2,5 +2,5 @@
 
 Currently in progress.
 
-Current features : 
+<b>Current features :</b> 
 - News display
