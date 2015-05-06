@@ -1,4 +1,4 @@
-<form name ="userinput" action="form_reader/save_userinput" method="post">
+<form name ="userinput" action="form/news_data_submitted" method="post">
 <label>Title</label>
 <input type="text" name="title">
 <label>Content</label>

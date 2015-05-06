@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Admin extends CI_Controller {
+class Form extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,9 +20,10 @@ class Admin extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->news();
 	}
-	public function news(){
-		$this->load->template('news/edit');
+	public function news_data_submitted(){
+		$this->load->model('NewsModel');
+		$this->NewsModel->insert_entry();
+		redirect('news');
 	}
 }
