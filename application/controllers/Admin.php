@@ -20,9 +20,9 @@ class Admin extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->news();
+		$this->load->template('admin/index');
 	}
 	public function news(){
-		$this->load->template('news/edit');
+		$this->load->template('admin/news/edit');
 	}
 }

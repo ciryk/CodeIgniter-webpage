@@ -1,0 +1,1 @@
+<a href="admin/news">News</a>
